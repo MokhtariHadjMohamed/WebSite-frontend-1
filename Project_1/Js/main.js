@@ -40,3 +40,42 @@ setInterval(function(){
     plusSlides(1);
 },6000)
 // End Header
+// Start testimonal
+let testimonal_val = 1;
+
+
+function plusTestimonal(n) {
+    testimonal(testimonal_val += n);
+  }
+  
+
+function testimonal(n){
+    let t = document.getElementsByClassName("testimonalBox");
+    let dotabout = document.getElementsByClassName("dotabout");
+    for(i = 0; i < t.length; i++){
+        t[i].style.display = "none"
+        if(i < 3){
+            dotabout[i].style.backgroundColor = "transparent"
+        }
+    }
+
+    if (n > t.length) 
+    {
+        testimonal_val = 1
+    }
+
+    if (n < 1) 
+    {
+        testimonal_val = t.length
+    }
+
+    t[testimonal_val - 1].style.display = "block"
+    dotabout[testimonal_val - 1].style.backgroundColor = "#00c7fc"
+}
+
+plusTestimonal(testimonal_val)
+
+setInterval(function(){
+    plusTestimonal(1);
+},6000)
+// End testimonal

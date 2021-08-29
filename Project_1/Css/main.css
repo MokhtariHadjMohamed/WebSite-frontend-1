@@ -460,4 +460,79 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
     padding: 15px 13px;
 }
 /* End Statistic */
+/* Start about2 */
+.about2 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about2 .container .testimonials .testimonal{
+    margin-top: 75px;
+}
+
+.about2 .container .testimonials .testimonal{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+.about2 .container .testimonials .testimonal .block{
+    border-bottom: var(--main-color) 1px solid;
+    padding-bottom: 5px;
+}
+
+.about2 .container .testimonials .testimonal img{
+    height: 100px;
+    width: 100px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    margin: auto;
+}
+
+.about2 .container .testimonials .testimonal .p{
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 100px;
+    font-size: small;
+    overflow: hidden;
+}
+
+.about2 .container .testimonials .testimonal h5{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: var(--icon-color);
+}
+
+.about2 .container .testimonials .testimonialsGrid{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Start Dot */
+.about2 .container .testimonials .dotBoxAbout{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50%;
+}
+
+.about2 .container .testimonials .dotBoxAbout .dotabout{
+    width: 10px;
+    height: 10px;
+    border: var(--main-color) 1px solid;
+    border-radius: 50%;
+    margin: 5px;
+}
+/* End Dot */
+
+.about2 .container .Skills{
+    
+}
+/* End about2 */
 /* End About Us */
