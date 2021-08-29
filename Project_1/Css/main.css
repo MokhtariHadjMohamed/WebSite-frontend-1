@@ -1,0 +1,463 @@
+/* Start var */
+:root{
+    --main-color: #1f2021;
+    --icon-color: #dad6d7;
+    --logo-color: #00c7fc;
+    --text-color: #00c5fc85;
+}
+/* End var */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Work Sans", sans-serif;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+/* End Global Rules */
+/* Start menu */
+.menu{
+    width: 100%;
+    position: fixed;
+    background-color: #1f2021e1;
+    z-index: 1;
+}
+
+.menu .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Start Logo */
+.menu .container .logo img{
+    width: 100px;
+    height: 40px;
+    background-size: contain;
+    margin-left: 20px;
+}
+/* End Logo */
+/* Start Menu Text */
+.menu_text a{
+    text-decoration: none;
+    margin: 10px;
+    color: var(--icon-color);
+}
+
+.menu_text a:hover{
+    color: var(--logo-color);
+    border-bottom: var(--logo-color) solid 2px;
+    padding-bottom: 12px;
+}
+/* End Menu Text */
+/* Start Search */
+.menu .container .search{
+    position: relative;
+    color: var(--icon-color);
+}
+
+.menu .container .search .text{
+    width: 1px;
+    height: 20px;
+    background-color: transparent;
+    border-width: 0px 0px 0px 1px;
+    border-color: transparent transparent transparent var(--icon-color);
+    border-style: none none none solid;
+    outline: none;
+    color: var(--icon-color);
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.menu .container .search .text:focus,.search:hover .text{
+    width: 300px;
+    animation-name: search;
+    animation-duration: 2s;
+    border: none;
+}
+
+@keyframes search {
+    from{
+        width: 50px;
+    }
+    to{
+        width: 300px;
+    }
+}
+/* End Search */
+/* End menu */
+
+/* Start header */
+.header{
+    height: 600px;
+    position: relative;
+}
+/* Start image */
+.img{
+    width: 100%;
+    left: 0;
+    display: flex;
+    position: absolute;
+    margin: auto;
+    background-color: var(--main-color);
+}
+
+#img1, #img2, #img3{
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+    background-size: cover;
+    animation-name: photo;
+    animation-duration: 3s;
+}
+
+#img1{
+background-image: url(../Image/penguin-2203693_1920.jpg);
+}
+#img2{
+background-image: url(../Image/penguins-6524840_1920.jpg);
+}
+#img3{
+background-image: url(../Image/puffin-5404178_1920.jpg);
+}
+
+@keyframes photo {
+    from{
+        opacity: 20%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+/* End image */
+/* Start Text */
+.header .container .outBlue{
+    width: 60%;
+    padding-left: 20%;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    background-color: var(--text-color);
+    color: white;
+}
+
+.header .container .outBlue .Htext{
+    padding: 50px;
+}
+
+.header .container .outBlue .Htext h2{
+    text-transform: uppercase;
+}
+/* End Text */
+/* Start Dot */
+.header .container .dotBox{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-left: 40%;
+}
+
+.header .container .dot{
+    width: 10px;
+    height: 10px;
+    border: var(--main-color) 1px solid;
+    border-radius: 50%;
+    margin: 5px;
+}
+/* End Dot */
+/* Start Arrow */
+.header .container .arrow{
+    display: flex;
+    align-items: center;
+}
+
+.left, .right{
+    color: var(--main-color);
+    opacity: 80%;
+    margin: 10px;
+    position: absolute ;
+    top:50%;
+}
+
+.left{
+    left: 0;
+}
+
+.right{
+    right: 0;
+}
+/* End Arrow */
+/* End header */
+/* Start title */
+.title{
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    color: var(--main-color);
+}
+
+.title h1{
+    margin: 10px;
+}
+
+.lineC{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.title #line,#line2{
+    width: 20%;
+    height: 2px;
+    background-color: var(--main-color);
+}
+
+.title #cerk{
+    width: 20px;
+    height: 20px;
+    border: var(--main-color) solid 2px;
+    border-radius: 50%;
+    background-color: white;
+}
+/* End titel */
+/* Start Services */
+.services{
+    margin-top: 30px;
+}
+.services .container .boxes{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    grid-gap: 20%;
+}
+.services .container .boxes .box{
+    display: flex;
+    align-items: center;
+}
+
+.services .container .boxes .box h3{
+    color: var(--logo-color);
+}
+
+.services .container .boxes .box .comment{
+    margin-left: 10%;
+}
+/* End Services */
+/* Start Phone Advertise*/
+.phone{
+    height: 500px;
+    position: relative;
+    margin-top: 100px;
+    background-color: var(--main-color);
+    overflow: hidden;
+}
+/* Start Text */
+.phone .container .blue{
+    width: 40%;
+    padding-right: 10%;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 150px);
+    background-color: var(--text-color);
+    color: white;
+}
+
+.phone .container .blue .Ptext{
+    padding: 50px;
+}
+
+.phone .container .blue .Ptext i{
+    margin-right: 30px;
+}
+/* End Text */
+.phone .container img{
+    margin: 10%
+}
+/* End Phone Advertise */
+
+/* Start Portfolio */
+.portfolio{
+    margin-top: 30px;
+}
+/* Start Links */
+.portfolio .container .links{
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio .container .links a{
+    margin: 1%;
+    color: var(--main-color);
+    padding: 20px 50px;
+    text-decoration: none;
+}
+
+.portfolio .container .links a:hover{
+    color: white;
+    background-color: var(--logo-color);
+}
+/* EndLinks */
+/* Start Photograph */
+.portfolio .photography{
+    height: 500px;
+    background-color: var(--main-color);
+    margin-bottom: 50px;
+}
+
+.portfolio .photography .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    grid-gap: 10%;
+}
+
+.portfolio .photography .container .box{
+    width: 40%;
+    height: 200px;
+    margin: 10px;
+}
+
+.portfolio .photography .container .cadre{
+    height: 150px;
+    background-color: #dad6d777;
+}
+
+.portfolio .photography .cadre i{
+    background-color: var(--logo-color);
+    color: white;
+    padding: 3% 3.5%;
+    border-radius: 50%;
+    margin-left: calc(50% - 30px);
+    margin-top: 35px;
+}
+
+.portfolio .photography .container .textarea{
+    background-color: white;
+    padding: 20px;
+}
+
+.portfolio .photography .container .textarea h4{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.portfolio .photography .container .textarea h6{
+    margin: 0;
+    padding: 0;
+    color: var(--logo-color);
+}
+
+.portfolio .btn{
+    height: 100px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.portfolio .btn a{
+    text-decoration: none;
+    color: var(--main-color);
+    padding: 20px 60px;
+}
+
+.portfolio .btn a:hover{
+    color: white;
+    background-color: var(--logo-color);
+}
+
+/* End Photograph */
+/* Start video */
+.video{
+    text-align: center;
+    background-color: var(--main-color);
+    padding: 50px 0;
+    color: white;
+}
+
+.video .cont{
+    width: 100%;
+    background-color: var(--text-color);
+    padding: 30px;
+}
+.video .cont h6{
+    margin-bottom: 50px;
+}
+.video .cont a{
+    text-decoration: none;
+    padding: 15px 30px;
+    color: white;
+}
+
+.video .cont a:hover{
+    color: white;
+    background-color: #1f202181;
+}
+/* End video */
+/* End Portfolio */
+/* Start About Us */
+.about{
+    margin-top: 50px;
+}
+
+.about .container .pc{
+    height: 250px;
+    margin-top: 50px;
+    margin-left: 120px;
+    overflow: hidden;
+}
+/* Start Statistic */
+.about .statistic {
+    height: 300px;
+    background-color: var(--main-color);
+    padding: 50px 0px;
+}
+
+.about .statistic .container{
+    height: 200px;
+    background-color: var(--text-color);
+    color: white;
+    display: flex;
+}
+
+.about .statistic .container .stat{
+    text-align: center;
+    margin: auto;
+}
+
+.about .statistic .container .stat i{
+    background-image: url(../Image/shape.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 15px 13px;
+}
+/* End Statistic */
+/* End About Us */
