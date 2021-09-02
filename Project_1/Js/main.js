@@ -80,5 +80,26 @@ setInterval(function(){
 },6000)
 // End testimonal
 // Start Skills
+function Skills(){
+    let skill = document.getElementsByClassName("gray")
+    let lab = document.getElementsByClassName("lab")
 
+    skill[0].style.width = "95%"
+    skill[1].style.width = "93%"
+    skill[2].style.width = "85%"
+    skill[3].style.width = "87%"
+    
+    lab[0].innerHTML = "95%" + "<div class='triangle'></div>"
+    lab[1].innerHTML = "93%" + "<div class='triangle'></div>"
+    lab[2].innerHTML = "85%" + "<div class='triangle'></div>"
+    lab[3].innerHTML = "87%" + "<div class='triangle'></div>"
+
+    lab[0].style.right = "1%"
+    lab[1].style.right = "3%"
+    lab[2].style.right = "11%"
+    lab[3].style.right = "9%"
+
+}
+
+Skills();
 // End Skills
