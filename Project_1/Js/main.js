@@ -79,3 +79,6 @@ setInterval(function(){
     plusTestimonal(1);
 },6000)
 // End testimonal
+// Start Skills
+
+// End Skills
