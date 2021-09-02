@@ -533,10 +533,27 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
 /* End testimonials */
 /* Start Skills */
 .about2 .container .Skills .bars .bar{
-    background-color: #00c7fc;
+    background-color: var(--icon-color);
     width: 100%;
     height: 20px;
 }
+
+.about2 .container .Skills .bar .gray{
+    width: 95%;
+    height: 20px;
+    background-color: #00c7fc;
+    /* animation-name: bar;
+    animation-duration: 10s; */
+}
+/* 
+@keyframes bar {
+    from{
+        width: 0;
+    }
+    to {
+        width: end;
+    }
+} */
 
 .about2 .container .Skills .bars h5{
     margin: 5px;
@@ -545,18 +562,40 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
 
 .about2 .container .Skills .bars .skill{
     position: relative;
+    margin-top: 30px;
 }
 
 .about2 .container .Skills .bars .skill .lab{
-    width: 30px;
     color: white;
     background-color: var(--main-color);
-    padding: 2px;
+    padding: 2px 5px;
     text-align: center;
     position: absolute;
     top: -5px;
-    right: 0;
+    right: 1%;
+    animation-name: lab;
+    animation-duration: 10s;
 }
+
+@keyframes lab {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+.about2 .container .Skills .bars .skill .lab .triangle{
+    border: 25px solid;
+    border-color: var(--main-color) transparent transparent  transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: -3px;
+    z-index: -1;
+}
+
 /* End Skills */
 /* End about2 */
 /* End About Us */
