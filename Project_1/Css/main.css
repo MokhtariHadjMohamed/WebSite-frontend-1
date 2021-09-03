@@ -464,7 +464,7 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
 .about2 .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 30px;
 }
 /* Start testimonials */
 .about2 .container .testimonials .testimonal{
@@ -532,6 +532,9 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
 /* End Dot */
 /* End testimonials */
 /* Start Skills */
+.about2 .container .Skills .bars{
+    margin-top: 75px;
+}
 .about2 .container .Skills .bars .bar{
     background-color: var(--icon-color);
     width: 100%;
@@ -542,10 +545,10 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
     width: 95%;
     height: 20px;
     background-color: #00c7fc;
-    /* animation-name: bar;
-    animation-duration: 10s; */
+    animation-name: bar;
+    animation-duration: 10s;
 }
-/* 
+
 @keyframes bar {
     from{
         width: 0;
@@ -553,7 +556,7 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
     to {
         width: end;
     }
-} */
+}
 
 .about2 .container .Skills .bars h5{
     margin: 5px;
@@ -598,4 +601,145 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
 
 /* End Skills */
 /* End about2 */
+/* Start EndAbout */
+.about .endAbout{
+    background-color: #1f2021;
+    color: white;
+    margin-top: 30px;
+}
+
+.about .endAbout .container{
+    text-align: center;
+    padding: 50px 0px;
+    text-transform: uppercase;
+}
+
+.about .endAbout .container h6{
+    padding: 0;
+    margin: 0;
+}
+/* End EndAbout */
 /* End About Us */
+/* Start Pricing */
+.pricing{
+    margin-top: 50px;
+}
+/* Start Columns */
+.pricing .container .columns{
+    display: flex;
+    align-items: center;
+}
+.pricing .container .columns .col {
+    width: 20%;
+    margin: 2.5%;
+}
+.pricing .container .columns .col .price{
+    display: inline-flex;
+    align-items: center;
+}
+
+.pricing .container .columns .col .line{
+    height: 2px;
+    background-color: var(--logo-color);
+}
+
+.pricing .container .columns .col{
+    text-align: center;
+}
+
+.pricing .container .columns .col .price p{
+    padding: 0;
+    margin: 10px;
+    font-size: 50px;
+    font-weight: 500;
+}
+.pricing .container .columns .col .price sub{
+    bottom: -20px;
+}
+.pricing .container .columns .col .price sup{
+    top: -30px;
+}
+.pricing .container .columns .col .featureBox{
+    width: 50%;
+    margin: auto;
+}
+
+.pricing .container .columns .col .featureBox p{
+    margin: 30px 0px;
+}
+
+.pricing .container .columns .col .buy{
+    margin: 20% 0px;
+}
+
+.pricing .container .columns .col .buy a{
+    text-decoration: none;
+    color: black;
+}
+
+.pricing .container .columns .col .buy a:hover{
+    padding: 10px 30px;
+    background-color: var(--logo-color);
+    color: white;
+}
+/* End Columns */
+.pricing .container .contactUs{
+    text-align: center;
+    font-weight: 500;
+}
+
+.pricing .container .contactUs p{
+    margin: 5%;
+}
+
+.pricing .container .contactUs a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    background-color: var(--logo-color);
+}
+/* Start EndPricing */
+/* Start Mail */
+.pricing .endprice{
+    background-color: var(--main-color);
+    color: white;
+    margin-top: 5%;
+}
+
+.pricing .endprice .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 0;
+}
+
+.pricing .endprice .textMail{
+    height: 50px;
+    border: 2px white solid;
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.pricing .endprice i{
+    margin: 0 10px;
+}
+
+.pricing .endprice .mail{
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    margin: 0 10px;
+}
+
+.pricing .endprice .sub{
+    height: 100%;
+    background-color: var(--logo-color);
+    border: none;
+    color: white;
+}
+/* End Mail */
+/* End EndPricing */
+/* End Pricing */
