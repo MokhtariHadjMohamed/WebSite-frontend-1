@@ -683,16 +683,16 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
     color: white;
 }
 /* End Columns */
-.pricing .container .contactUs{
+.pricing .container .contactUsP{
     text-align: center;
     font-weight: 500;
 }
 
-.pricing .container .contactUs p{
+.pricing .container .contactUsP p{
     margin: 5%;
 }
 
-.pricing .container .contactUs a{
+.pricing .container .contactUsP a{
     text-decoration: none;
     color: white;
     padding: 15px 30px;
@@ -714,11 +714,13 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
 }
 
 .pricing .endprice .textMail{
+    width: 100%;
     height: 50px;
     border: 2px white solid;
     display: flex;
     align-items: center;
     margin-right: 10%;
+    position: relative;
 }
 
 .pricing .endprice i{
@@ -726,6 +728,7 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
 }
 
 .pricing .endprice .mail{
+    width: 65%;
     height: 50px;
     outline: none;
     border: none;
@@ -739,7 +742,110 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
     background-color: var(--logo-color);
     border: none;
     color: white;
+    position: absolute;
+    right: 0;
+}
+
+.pricing .endprice .container p{
+    padding: 0;
+    margin: 0;
 }
 /* End Mail */
 /* End EndPricing */
 /* End Pricing */
+/* Start ContactUs */
+.contactUs{
+    margin-top: 30px;
+}
+
+.contactUs .container .cont{
+    display: flex;
+    /* justify-content: space-between; */
+}
+/* Start Message*/
+.contactUs .container .message {
+    flex-grow: 3;
+    margin-right: 30px;
+    position: relative;
+}
+
+.contactUs .container .message textarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.contactUs .container .message input{
+    display: block;
+    margin-top: 30px;
+}
+
+.contactUs .container .message #name, #email{
+    width: 100%;
+    height: 50px;
+}
+
+.contactUs .container .message #send{
+    height: 50px;
+    background-color: var(--logo-color);
+    border: none;
+    color: white;
+    font-size: small;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+/* End Message*/
+/* Start info */
+.contactUs .container .info{
+    flex-grow: 1;
+}
+/* End info */
+/* End ContactUs */
+/* Satrt Footer */
+.footer {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.footer .container{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer .container img{
+    width: 200px;
+    margin: 30px;
+}
+
+.footer .container .line{
+    width: 200px;
+    height: 2px;
+    background-color: white;
+    margin: auto;
+}
+
+.footer .container .icone{
+    margin: 20px;
+}
+
+.footer .container .icone i{
+    margin: 10px;
+}
+
+.footer .container h6{
+    padding: 0;
+    margin: 0;
+    display: inline;
+    color: var(--logo-color);
+}
+
+.footer .container .copyright{
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+/* End Footer */
