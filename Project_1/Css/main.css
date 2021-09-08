@@ -66,13 +66,13 @@
 }
 /* End Logo */
 /* Start Menu Text */
-.menu_text a{
+.menu .container .menu_text a{
     text-decoration: none;
     margin: 10px;
     color: var(--icon-color);
 }
 
-.menu_text a:hover{
+.menu .container .menu_text a:hover{
     color: var(--logo-color);
     border-bottom: var(--logo-color) solid 2px;
     padding-bottom: 12px;
@@ -98,7 +98,7 @@
     margin-right: 10px;
 }
 
-.menu .container .search .text:focus,.search:hover .text{
+.menu .container .search .text:focus,.menu .container .search:hover .text{
     width: 300px;
     animation-name: search;
     animation-duration: 2s;
@@ -114,6 +114,95 @@
     }
 }
 /* End Search */
+/* Start Menu phone */
+@media only screen and (max-width: 768px){
+    .menu{
+        display: none;
+    }
+
+    .phonemenu {
+        width: 100%;
+        position: fixed;
+        background-color: #1f2021e1;
+        z-index: 1;
+    }
+
+    .phonemenu .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .phonemenu .container img{
+        width: 100px;
+        height: 40px;
+        background-size: contain;
+    }
+
+    .phonemenu .container .lines .line{
+        width: 40px;
+        height: 2px;
+        background-color: var(--logo-color);
+        margin: 10px;
+    }
+
+    .phonemenu .container .boxsearch{
+        width: 100%;
+        position: absolute;
+        background-color: #1f2021e1;
+        left: 0;
+        bottom: -250px;
+        padding: 20px;
+        display: none;
+    }
+
+    .phonemenu .container .boxsearch .search{
+        display: flex;
+        position: relative;
+        color: var(--icon-color);
+    }
+
+    .phonemenu .container .boxsearch .search .text{
+        width: 100%;
+        height: 20px;
+        background-color: transparent;
+        border-width: 0px 1px 0px 0px;
+        border-color: transparent var(--icon-color) transparent transparent;
+        border-style: none solid none none ;
+        outline: none;
+        color: var(--icon-color);
+        padding: 0;
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    .phonemenu .container .boxsearch .menu_text a{
+        display: block;
+        margin: 10px;
+        text-align: center;
+        text-decoration: none;
+        margin: 10px;
+        color: var(--icon-color);
+    }
+
+    .phonemenu .container .boxsearch .menu_text a:hover{
+        color: var(--logo-color);
+    }
+
+    .phonemenu .container .lines .rect{
+        position: absolute;
+        border: 10px solid;
+        border-color:  transparent transparent #1f2021b2 transparent ;
+        top: -20px;
+        right: 30px;
+    }
+
+    .phonemenu .container .lines:hover .boxsearch{
+        display: block;
+    }
+}
+/* End Menu phone */
 /* End menu */
 
 /* Start header */
@@ -905,7 +994,8 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
     }
 
     .pricing .endprice .container .textMail{
-        margin-bottom: 20px;
+        width: auto;
+        margin: 30px;
     }
 }
 /* End EndPricing */
