@@ -120,7 +120,19 @@
 .header{
     height: 600px;
     position: relative;
+    background-color: var(--main-color);
 }
+
+
+@media only screen and (max-width: 768px) {
+    .header {
+        height: auto;
+    }
+    .header .container{
+        height: auto;
+        padding-top: 15%;
+    }
+  }
 /* Start image */
 .img{
     width: 100%;
@@ -158,6 +170,12 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
         opacity: 100%;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .header .container .img, .dot, .arrow .left, .right{
+        display: none;
+    }
+  }
 /* End image */
 /* Start Text */
 .header .container .outBlue{
@@ -170,6 +188,24 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
     color: white;
 }
 
+/* Small */
+@media only screen and (max-width: 768px) {
+    .header .container .outBlue{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+      }
+  }
+/* Medium */
+@media only screen and  (max-width: 992px) {
+    .header .container .outBlue{
+      width: 100%;
+      padding: 0%;
+    }
+  }
+
+  
 .header .container .outBlue .Htext{
     padding: 50px;
 }
@@ -249,6 +285,15 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
     border-radius: 50%;
     background-color: white;
 }
+
+
+/* Small */
+@media only screen and (max-width: 768px){
+    .title{
+        width: auto;
+    }
+}
+
 /* End titel */
 /* Start Services */
 .services{
@@ -272,6 +317,17 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
 .services .container .boxes .box .comment{
     margin-left: 10%;
 }
+
+/* Small */
+@media only screen and (max-width: 768px) {
+    .services .container .boxes{
+        display: block;
+      }
+
+      .services .container .boxes .box{
+          margin: 10%;
+      }
+  }
 /* End Services */
 /* Start Phone Advertise*/
 .phone{
@@ -303,6 +359,29 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
 .phone .container img{
     margin: 10%
 }
+
+/* Small */
+@media only screen and (max-width: 768px) {
+    .phone{
+        height: auto;
+    }
+
+    .phone .container img{
+        display: none;
+    }
+
+    .phone .container .blue{
+        width: auto;
+        position: relative;
+        margin: auto;
+        padding: auto;
+    }
+
+    .phone .container{
+        padding: 15% 0;
+    }
+}
+
 /* End Phone Advertise */
 
 /* Start Portfolio */
@@ -325,6 +404,18 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
 .portfolio .container .links a:hover{
     color: white;
     background-color: var(--logo-color);
+}
+
+/* Small */
+@media only screen and (max-width: 768px){
+    .portfolio .container .links{
+        display: block;
+    }
+
+    .portfolio .container .links a{
+        display: block;
+    }
+
 }
 /* EndLinks */
 /* Start Photograph */
@@ -393,6 +484,14 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
     background-color: var(--logo-color);
 }
 
+/* Small */
+@media only screen and (max-width: 768px){
+    .portfolio .photography .container .box{
+        width: auto;
+        height: auto;
+    }
+}
+
 /* End Photograph */
 /* Start video */
 .video{
@@ -433,6 +532,13 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
     margin-left: 120px;
     overflow: hidden;
 }
+
+/* Small */
+@media only screen and (max-width: 768px){
+    .about .container .pc{
+        display: none;
+    }
+}
 /* Start Statistic */
 .about .statistic {
     height: 300px;
@@ -466,16 +572,15 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
     justify-content: space-between;
     margin-top: 30px;
 }
-/* Start testimonials */
-.about2 .container .testimonials .testimonal{
-    margin-top: 75px;
-}
 
+/* Start testimonials */
 .about2 .container .testimonials .testimonal{
     height: 100px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: relative;
+    margin-top: 75px;
 }
 
 .about2 .container .testimonials .testimonal .block{
@@ -495,7 +600,7 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
 .about2 .container .testimonials .testimonal .p{
     margin: 0;
     padding: 0;
-    width: 300px;
+    width: auto;
     height: 100px;
     font-size: small;
     overflow: hidden;
@@ -513,13 +618,14 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
 .about2 .container .testimonials .testimonialsGrid{
     display: flex;
     justify-content: space-between;
+    padding-right: 15%;
 }
 
 /* Start Dot */
 .about2 .container .testimonials .dotBoxAbout{
     display: flex;
     margin-top: 20px;
-    margin-left: 50%;
+    justify-content: center;
 }
 
 .about2 .container .testimonials .dotBoxAbout .dotabout{
@@ -528,6 +634,30 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
     border: var(--main-color) 1px solid;
     border-radius: 50%;
     margin: 5px;
+}
+
+
+/* Small */
+@media only screen and (max-width: 768px){
+    .about2 .container{
+        display: block;
+    }
+
+    .about2 .container .testimonials .testimonal{
+        margin-left: 0;
+    }
+
+    .about2 .container .testimonials .testimonialsGrid{
+        padding: 0;
+    }
+
+    .about2 .container .testimonials .testimonialsGrid .block{
+        padding-bottom: 5%;
+    }
+
+    .about2 .container .testimonials .testimonialsGrid h5{
+        bottom: -5%;
+    }
 }
 /* End Dot */
 /* End testimonials */
@@ -682,6 +812,21 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
     background-color: var(--logo-color);
     color: white;
 }
+
+
+/* Small */
+@media only screen and (max-width: 768px){
+    .pricing .container .columns{
+        display: block;
+    }
+
+    .pricing .container .columns .col {
+        width: auto;
+        margin-bottom: 20%;
+    }
+
+}
+
 /* End Columns */
 .pricing .container .contactUsP{
     text-align: center;
@@ -728,7 +873,7 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
 }
 
 .pricing .endprice .mail{
-    width: 65%;
+    width: auto;
     height: 50px;
     outline: none;
     border: none;
@@ -751,6 +896,18 @@ background-image: url(../Image/puffin-5404178_1920.jpg);
     margin: 0;
 }
 /* End Mail */
+
+/* Small */
+@media only screen and (max-width: 768px){
+    .pricing .endprice .container{
+        display: block;
+        text-align: center;
+    }
+
+    .pricing .endprice .container .textMail{
+        margin-bottom: 20px;
+    }
+}
 /* End EndPricing */
 /* End Pricing */
 /* Start ContactUs */
